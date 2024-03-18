@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 3rem;
+	color: white;
+	background: gray;
+	text-align: center;
+	padding: 20px 0;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 1.6rem;
+	line-height: 22px;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a,
+span {
+	font-weight: bold;
+}
+
+.container {
+	width: 1024px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px auto;
+	gap: 20px;
+}
+
+.item {
+	flex-shrink: 0;
+	width: calc((100% - 40px) / 3);
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.red {
+	border: 3px solid red;
+}
+
+.green {
+	border: 3px solid green;
+}
+
+.yellow {
+	border: 3px solid yellow;
+}
+
+.blue {
+	border: 3px solid blue;
+}
+
+.pink {
+	border: 3px solid pink;
+}
+
+.info {
+	display: flex;
+}
+
+footer {
+	height: 160px;
+	line-height: 160px;
+	text-align: center;
+	background: lightgray;
+}
+
+@media (max-width: 1024px) {
+	.container {
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.item {
+		width: calc((100% - 20px) / 2);
+	}
+}
+
+@media (max-width: 768px) {
+	.item {
+		width: 100%;
+	}
+}
