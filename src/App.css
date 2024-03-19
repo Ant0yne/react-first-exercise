@@ -82,8 +82,10 @@ span {
 }
 
 footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 160px;
-	line-height: 160px;
 	text-align: center;
 	background: lightgray;
 }
